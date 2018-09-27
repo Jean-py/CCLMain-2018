@@ -10,18 +10,18 @@ public class Script {
     int ligneFile2 = 0;
     int decalage = 0;
 
-    public void createBVH(String file1, String  file2) throws IOException {
+    public void createBVH(String file1, String  file2, Algo algorithm) throws IOException {
 
-        FileWriter out = new FileWriter("../CCLMainz/BVH-Examples/threejs/bvh/frankenstein.bvh", true);
+        FileWriter out = new FileWriter("../bvh/frankenstein.bvh", true);
         BufferedWriter writer = new BufferedWriter(out);
 
-
         FileInputStream fstream =  new FileInputStream(file1);
-        FileInputStream fstream2 =  new FileInputStream(file2);
-        // initialisation du reader ...
+        FileInputStream fstream2 = new FileInputStream(file2);
 
         BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
         BufferedReader br2 = new BufferedReader(new InputStreamReader(fstream2));
+
+        System.out.println(br + "   " + br2 );
 
 
         String strLine;
@@ -35,6 +35,9 @@ public class Script {
         String[] numbers2 = null;
         float xfile = 0;
         float xfile2 = 0;
+        br.readLine();
+        br2.readLine();
+
 
         while ((line = br.readLine()) != null  && (line2 = br2.readLine()) != null)   {
             // split each line based on regular expression having
@@ -71,21 +74,60 @@ public class Script {
 
                     }
                 }
-
+               // runAlgo(writer,algorithm,xfile, xfile2);
                 Random rand = new Random();
-
-                // nextInt as provided by Random is exclusive of the top value so you need to add 1
-
                 int randomNum = rand.nextInt((1 - 1) + 1) -1;
-                writer.write( xfile+ randomNum+" "  );
+                try {
+                    writer.write( xfile+ randomNum+" "  );
+                    System.out.println(xfile);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            writer.write("\n");
+
+
+        }
+         writer.close();
+        //Close the input stream
+         br.close();
+         br2.close();
+
+    }
 
 
 
-              //  System.out.println("xfile : "+ xfile);
-               // System.out.println("xfile2 : " + xfile2);
-                // Print the content on the console
-                //  System.out.println (strLine);
-              //  System.out.println(""+ it);
+
+
+    public void runAlgo(BufferedWriter writer, Algo algo, float xfile, float xfile2){
+
+
+
+        switch (algo){
+            case MULT:
+                break;
+            case RANDOM:
+                Random rand = new Random();
+                int randomNum = rand.nextInt((1 - 1) + 1) -1;
+                try {
+                    writer.write( xfile+ randomNum+" "  );
+                    System.out.println(xfile);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                break;
+            case AVERAGE:
+                break;
+        }
+
+
+
+
+        //  System.out.println("xfile : "+ xfile);
+        // System.out.println("xfile2 : " + xfile2);
+        // Print the content on the console
+        //  System.out.println (strLine);
+        //  System.out.println(""+ it);
 
                /* if(it<43){
                     writer.write( xfile+ " "  );
@@ -103,37 +145,7 @@ public class Script {
                     writer.write(xfile+" ");
 
                 }*/
-            }
-            writer.write("\n");
-
-//            System.out.println("------");
-
-
-        }
-        writer.close();
-
-        //Close the input stream
-        br.close();
-        br2.close();
-
-        /*Scanner scanner = new Scanner(reader);
-
-        // L'expression régulière qui délimite les champs
-        scanner.useDelimiter(Pattern.compile("[\t\n]"));
-
-        // On boucle sur chaque champ detecté
-        float champ;
-        while (scanner.hasNext()) {
-            // Si le champ n'est pas un entier, une exception de type InputMismatchException sera levée
-            champ = scanner.nextFloat();
-            System.out.println(champ);
-
-            //Utilisation du champ...
-        }*/
-
-
     }
-
 
 
 
