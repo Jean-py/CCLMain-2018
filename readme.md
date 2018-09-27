@@ -1,4 +1,4 @@
-#CHOREOGRAPHIC CODING LABS - Mainz 2018
+*CHOREOGRAPHIC CODING LABS - Mainz 2018*
 
 Yhe rationale behind this idea is to generate strange and weird movement from existing movement. This project is composed of two part, the threejs server and the controller (javafx). 
 
