@@ -1,0 +1,34 @@
+<html>
+	<head>
+	  <title>Patate</title>
+        <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+	<body>
+    <div class="commandeVideo" id="idCommandeVideo">
+        <img class="image" id="play-pause" src="./videoCommand/playButton.png" alt="playPause"/>
+        <img class="image" id="mute" src="./videoCommand/volumeFull.png" alt="volumeFull"/>
+        <p id="liveIndicator" >Performer: </p>
+        <button type="button" id="flowerDance">FlowerDance!</button>
+
+    </div>
+
+
+    <div class="range-slider" id="videoSlider">
+        <div class="range-slider_handle range-slider_handle-min" id="range-slider_handle-min" data-handle="min"></div>
+        <div class="range-slider_handle range-slider_handle-max" id="range-slider_handle-max" data-handle="max"></div>
+        <div class="range-slider_track" id="rangeSliderTrack"></div>
+        <div class="range-slider_track" id="segmentMinMax"></div>
+    </div>
+
+        <script src="myjs/stateMachineDragAndDropSlider.js"></script>
+        <script src="myjs/streamCommand.js"></script>
+
+		<script src="build/three.js"></script>
+        <script src="js/controls/OrbitControls.js"></script>
+		<script src="js/loaders/BVHLoader.js"></script>
+		<script src="myjs/skeleton.js"></script>
+
+	</body>
+</html>

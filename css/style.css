@@ -1,0 +1,110 @@
+body {
+    color: #fff;
+    font-family:Monospace;
+    font-size:13px;
+    text-align:center;
+    font-weight: bold;
+
+    background-color: #000;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#info {
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+}
+
+
+
+/*CSS commande pour video et range slider*/
+
+#play-pause,#mute{
+    width:  2%;
+    height: 2%;
+}
+
+
+
+#play-pause,#videoSlider,#timerVideo{
+    margin-right: 1%;
+}
+
+
+.commandeVideo{
+    margin-bottom: 2%;
+
+}
+
+#timerVideo {
+    display: inline;
+}
+
+
+
+#videoSlider {
+    position:relative;
+}
+
+
+.range-slider .range-slider_track {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 100%;
+    border-radius: 100px;
+    background: #c6c6c6;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+#rangeSliderTrack{
+    width: 5000px;
+}
+
+.range-slider .range-slider_handle {
+
+    width: 30px;
+    height: 30px;
+    display: inline;
+    z-index:1;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    background: #ff0012;
+    cursor: pointer;
+}
+
+.range-slider .range-slider_handle-max {
+    visibility: hidden;
+    background: #8d1f3b;
+    height: 23px;
+    width: 3px;
+    top: 25px;
+    position: absolute;
+}
+
+#segmentMinMax {
+    background: #213F8D;
+    visibility: hidden;
+    width: 10px;
+    transition: 0.5s ease-out;
+}
+
+
+.range-slider_handle-min {
+    visibility: visible;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+
