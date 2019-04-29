@@ -2,7 +2,7 @@
 
 The rationale behind this idea is to combine movement files to and generate new movement files. This project is composed of two part, the threejs server and an interface to control the different algorithm's parameters of the project. This part is coded in javafx and is situated in ./Con troller. 
 
-The website is reading .BVH file and you can create new one with the controller. This controller permits to tweak the data of the algorithm used.
+The website is reading .BVH file and you can create new one with the controller. This controller permits to tweak the data of the algorithm used. 
 
 Have fun!
 
