@@ -1,6 +1,6 @@
 *CHOREOGRAPHIC CODING LABS - Mainz 2018-2019*
 
-Yhe rationale behind this idea is to generate strange and weird movement from existing movement. This project is composed of two part, the threejs server and the controller (javafx). 
+The rationale behind this idea is to combine movement files to and generate new movement files. This project is composed of two part, the threejs server and an interface to control the different algorithm's parameters of the project. This part is coded in javafx and is situated in ./Con troller. 
 
 The website is reading .BVH file and you can create new one with the controller. This controller permits to tweak the data of the algorithm used.
 
