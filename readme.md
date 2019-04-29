@@ -15,3 +15,10 @@ The Choreographic Coding Lab (CCL) format offers unique opportunities of exchang
 CCLs are an outcome of Motion Bank, a four-year research project of The Forsythe Company focused on the creation of on line digital scores with guest choreographers.
 
 
+Effect by Taneli Törmä
+Costumes: Ute Noack
+Sound design: Søren Lyngsø Knudsen
+Lighting design: Petri Tuhkanen
+Female dancers: Bojana Mitrović, Amber Pansters, Milena Wiese
+Male dancers: Zachary Chant, Finn Lakeberg
+Understudy: Thomas van Praet
